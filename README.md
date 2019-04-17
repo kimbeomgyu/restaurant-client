@@ -1,3 +1,3 @@
 # restaurant-client
 
-![l](/public/alert.mov)
+[![IMAGE ALT TEXT HERE]()](/public/alert.mov)
