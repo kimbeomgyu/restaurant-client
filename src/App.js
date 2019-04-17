@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import SocketIOClient from 'socket.io-client';
+import { baseUrl } from './config.json';
 import './style.css';
 
 class App extends Component {
@@ -11,8 +12,7 @@ class App extends Component {
     restaurantKey: localStorage.getItem('restaurant_id'),
     orderData: []
   };
-  baseUrl = 'http://ec2-34-201-173-255.compute-1.amazonaws.com:8080';
-  socket = SocketIOClient(this.baseUrl);
+  socket = SocketIOClient(baseUrl);
 
   componentDidMount() {
     console.log('didmount');
@@ -38,7 +38,6 @@ class App extends Component {
     let { email, password } = this.state;
     if (email === '' || password === '')
       return alert('아이디와 비밀번호를 적어주세요!');
-    let baseUrl = this.baseUrl;
     await axios
       .post(
         baseUrl + '/users/signin',
