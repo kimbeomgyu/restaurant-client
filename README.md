@@ -1,3 +1,3 @@
 # restaurant-client
 
-![](/public/alert.mov)
+![l](/public/alert.mov)
