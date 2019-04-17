@@ -1,3 +1,3 @@
 # restaurant-client
 
-[![preview]()](/public/preview.png)
+![preview](/public/preview.png)
